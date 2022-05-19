@@ -1,0 +1,14 @@
+<app-title>
+    Tela de Resultado
+</app-title>
+
+<app-navigate-buttons
+    previusPage="/play/places"
+    [restartGame]="true"
+>
+</app-navigate-buttons>
+
+<div class="result">
+    <div class="item" *ngFor="let phrase of phrases">{{ phrase }}</div>
+</div>
+

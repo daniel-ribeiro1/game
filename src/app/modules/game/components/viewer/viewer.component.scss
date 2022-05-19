@@ -1,0 +1,36 @@
+@import '~src/sass/styles';
+
+.viewer {
+    margin-top: 2rem;
+
+    h3 {
+        font-weight: 500;
+    }
+
+    .item {
+        @extend %light-shadow-bottom;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        margin-top: 0.5rem;
+        padding: 0 0.5rem;
+
+        input {
+            flex: 3;
+            border: 0;
+            padding: 1rem;
+
+            background-color: transparent;
+        }
+
+        .actions {
+            margin: 0 auto;
+        }
+    }
+
+    .msg {
+        color: $color-msg-hint;        
+    }
+}

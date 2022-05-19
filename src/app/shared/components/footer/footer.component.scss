@@ -1,0 +1,15 @@
+@import '~src/sass/styles';
+
+footer {
+    @extend %light-shadow-top;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 80px;
+
+    p {
+        text-align: center;
+    }
+}

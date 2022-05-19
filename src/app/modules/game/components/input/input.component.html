@@ -1,0 +1,23 @@
+<div class="input">
+    <mat-form-field>
+        <mat-label>
+            {{ label }}
+        </mat-label>
+
+        <input 
+            matInput 
+            type="text" 
+            [formControl]="input" 
+            (keyup.enter)="addValue()">
+
+        <mat-hint>
+            <i>* Preencha o campo para poder adicionar os valores.</i>
+        </mat-hint>
+    </mat-form-field>
+    
+    <div>
+        <button [disabled]="disable || !input.value" mat-raised-button color="primary" (click)="addValue()">
+            Adicionar
+        </button>
+    </div>
+</div>

@@ -1,0 +1,18 @@
+// Colors
+$color-light-shadow: rgba(129, 129, 129, 0.048);
+$color-base: #485DD1;
+$color-text: rgb(75, 75, 75);
+$color-progress-bar: #4481;
+$color-progress: $color-base;
+$color-msg-hint: rgba(131, 131, 131, 0.678);
+$color-modal: rgba(0, 0, 0, 0.267);
+
+// Break Points
+$bp-small: 576px;
+$bp-medium: 768px;
+$bp-extra-large: 1200px;
+
+// Container Size
+$container-normal: 75vw;
+$container-large: 90vw;
+$container-full: 100vw;

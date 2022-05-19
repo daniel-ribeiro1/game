@@ -1,0 +1,25 @@
+<div>
+    <app-title>Adicionar Lugares</app-title>
+
+    <app-input 
+        (onAdd)="addPlace($event)" 
+        label="Lugares"
+        [disable]="!isTheNumberOfPlacesLessThanToTheNumberOfNames()"    
+    >
+
+    </app-input>
+
+    <app-navigate-buttons 
+        previusPage="/play/actions" 
+        nextPage="{{ canGoToTheNextPage() ? '/play/result' : '' }}">
+    </app-navigate-buttons>
+
+
+    <app-viewer 
+        [items]="places" 
+        (onDelete)="deletePlace($event)" 
+        (onEdit)="editPlace($event)"
+        [minValue]="numberOfNames"
+    >
+    </app-viewer>
+</div>

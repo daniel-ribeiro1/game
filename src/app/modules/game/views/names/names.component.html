@@ -1,0 +1,15 @@
+<div>
+    <app-title>Adicionar Nomes</app-title>
+
+    <app-input (onAdd)="addName($event)" label="Nomes"></app-input>
+    <app-navigate-buttons 
+        *ngIf="names.length > 0" 
+        nextPage="/play/actions">
+    </app-navigate-buttons>
+
+    <app-viewer 
+        [items]="names" 
+        (onDelete)="deleteName($event)" 
+        (onEdit)="editName($event)">
+    </app-viewer>
+</div>

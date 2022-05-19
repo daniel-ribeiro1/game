@@ -1,0 +1,22 @@
+<div>
+    <app-title>Adicionar Ações</app-title>
+
+    <app-input 
+        (onAdd)="addAction($event)" 
+        label="Ações"
+        [disable]="!isTheNumberOfActionsLessThanToTheNumberOfNames()">
+    </app-input>
+
+    <app-navigate-buttons 
+        previusPage="/play/names" 
+        nextPage="{{ canGoToTheNextPage() ? '/play/places' : '' }}">
+    </app-navigate-buttons>
+
+    <app-viewer 
+        (onDelete)="deleteAction($event)" 
+        (onEdit)="editAction($event)"
+        [items]="actions" 
+        [minValue]="numberOfNames"
+    >
+    </app-viewer>
+</div>

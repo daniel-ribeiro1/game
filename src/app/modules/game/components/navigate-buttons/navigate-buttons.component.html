@@ -1,0 +1,25 @@
+<div class="navigate-container" *ngIf="nextPage || previusPage || canRestartGame">
+    <a *ngIf="previusPage" 
+        class="button" 
+        color="primary" 
+        mat-stroked-button
+        [routerLink]="previusPage">
+        Anterior
+    </a>
+
+    <a *ngIf="nextPage" 
+        class="button" 
+        color="primary" 
+        mat-stroked-button
+        [routerLink]="nextPage">
+        Próximo
+    </a>
+
+    <a *ngIf="canRestartGame" 
+        class="button" 
+        color="primary" 
+        mat-stroked-button
+        (click)="restart()">
+        Reinicar jogo
+    </a>
+</div>

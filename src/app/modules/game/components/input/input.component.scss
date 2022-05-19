@@ -1,0 +1,19 @@
+.input {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+
+    max-width: 400px;
+    margin: 0 auto;
+
+    mat-form-field {
+        flex: 3;
+        margin: 1.25rem 0;
+    }
+    
+    button {
+        flex: 1;
+        margin-left: 0.25rem;
+    }
+}

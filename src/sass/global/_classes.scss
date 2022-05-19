@@ -1,0 +1,20 @@
+// Container
+.container {
+    max-width: $container-normal;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+@media (max-width: $bp-medium) {
+    // Container
+    .container {
+        max-width: $container-large;
+    }
+}
+
+@media (max-width: $bp-small) {
+    // Container 
+    .container {
+        max-width: $container-full;
+    }
+}

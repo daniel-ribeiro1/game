@@ -1,0 +1,47 @@
+@import '~src/sass/styles';
+
+.modal {
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    background-color: $color-modal;
+
+    .form {
+        @extend %light-shadow-bottom;
+
+        min-height: 300px;
+        width: 100%;
+        min-width: 150px;
+        max-width: 400px;
+
+        margin: 0 auto;
+        padding: 0 1rem;
+
+        font-size: 1rem;
+
+        background-color: white;
+        border-radius: 10px;
+
+        mat-form-field {
+            width: 100%;
+            
+            padding: 1rem;
+        }
+        
+        .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                margin: 0.5rem;
+            }
+        }
+    }
+}

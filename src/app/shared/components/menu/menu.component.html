@@ -1,0 +1,29 @@
+<nav id="menu" (mouseleave)="isOpenMenuMobile = false">
+    <div class="menu-container container">
+        <a routerLink="" class="logo">
+            <h1>Logo</h1>
+        </a>
+    
+        <!-- Desktop -->
+        <ul class="desktop">
+            <li>
+                <a mat-raised-button color="primary" routerLink="/play">Jogar</a>
+            </li>
+        </ul>
+
+        <!-- Mobile -->
+        <ul class="mobile">
+            <a mat-icon-button (click)="isOpenMenuMobile = !isOpenMenuMobile">
+                <mat-icon>
+                    menu
+                </mat-icon>
+            </a>
+            
+            <div class="links" [class.open]="isOpenMenuMobile" >
+                <li>
+                    <a mat-raised-button color="primary" routerLink="/play">Jogar</a>
+                </li>
+            </div>
+        </ul>
+    </div>
+</nav>

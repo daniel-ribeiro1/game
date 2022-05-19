@@ -1,0 +1,89 @@
+@import '~src/sass/styles';
+
+#menu {
+    @extend %light-shadow-bottom;
+
+    font-size: 1rem;
+
+    .menu-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        min-height: 80px;
+        margin: 0 auto;
+    
+        .logo {
+            text-decoration: none;
+            color: $color-base;
+
+            h1 {
+                margin: 0;
+            }
+        }
+
+        .desktop {
+            @extend %flex-full-center;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .mobile {
+            display: none;
+            align-items: center;
+            justify-content: center;
+
+            .links {
+                @extend %light-shadow-bottom;
+                @extend %flex-full-center;
+               
+                flex-direction: column;
+                
+                position: absolute;
+                top: 60px;
+                right: 0;
+
+                padding: 1rem 2rem;
+                min-height: 100px;
+                background-color: white;
+
+                li {
+                    list-style: none;
+    
+                    a {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $bp-small) {
+    #menu {
+        .menu-container {
+            
+            .desktop {
+                display: none;
+            }
+            .mobile {
+                display: flex;
+                position: relative;
+
+                .links {
+                    display: none;
+
+                    &.open {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}

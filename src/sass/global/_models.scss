@@ -1,0 +1,14 @@
+// Shadow
+%light-shadow-bottom {
+    box-shadow: 4px 4px 10px $color-light-shadow;
+}
+%light-shadow-top {
+    box-shadow: 4px -4px 10px $color-light-shadow;
+}
+
+// Flex
+%flex-full-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

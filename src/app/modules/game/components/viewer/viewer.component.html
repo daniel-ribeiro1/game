@@ -1,0 +1,32 @@
+<div class="viewer">
+    <h3>Valores Adicionados</h3>
+
+    <small *ngIf="minValue > 0">Quantidade necessária: {{ minValue }}</small>
+
+    <div class="item" *ngFor="let item of items">
+        <input type="text" [value]="item.value" ([ngModel])="item.value" [disabled]="true">
+
+        <div class="actions">
+            <a mat-icon-button color="primary" (click)="setItemToEdit(item)">
+                <mat-icon>
+                    edit
+                </mat-icon>
+            </a>
+            <a mat-icon-button color="warn" (click)="deleteItem(item)">
+                <mat-icon>
+                    delete
+                </mat-icon>
+            </a>
+        </div>
+    </div>     
+    <div class="msg" *ngIf="items.length == 0">
+        Nenhum item adicionado ainda...
+    </div> 
+
+    <app-edit-item-modal 
+        *ngIf="editStatus" 
+        [item]="getItemToEdit()" 
+        (onEdit)="edit($event)" 
+        (onClose)="editStatus = !editStatus">
+    </app-edit-item-modal>
+</div>

@@ -1,0 +1,16 @@
+@import '~src/sass/styles';
+
+.progress-bar {
+    height: 10px;
+
+    background-color: $color-progress-bar;
+    border-radius: 2px;
+    overflow: hidden;
+
+    .progress {
+        height: 100%;
+        background-color: $color-progress;
+
+        transition: width 0.5s;
+    }
+}
