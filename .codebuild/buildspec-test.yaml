@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14.x
+    on-failure: ABORT
+    commands: 
+      - echo "Instalando o node"
+    
+  pre_build:
+    commands:
+      - npm i 
+      - echo "Instalou as dependências"
+      - echo "Rodou os testes"
+
+
