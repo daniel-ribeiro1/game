@@ -31,7 +31,7 @@ artifacts:
   base-directory: dist/game
   discard-paths: yes
 
-cache:
-  paths:
-    - "node_modules/**/*"
+#cache:
+  #paths:
+    #- "node_modules/**/*"
     #- "/root/.npm/**/*"
