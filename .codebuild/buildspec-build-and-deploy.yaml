@@ -8,10 +8,10 @@ phases:
     commands: 
       - echo "Instalando o node ATUALIZADO"
         
-  pre_build:
-    commands:
-      - npm i 
-      - echo "Instalou as dependências"
+  #pre_build:
+    #commands:
+      #- npm i 
+      #- echo "Instalou as dependências"
   
   build:
     commands:
@@ -31,7 +31,7 @@ artifacts:
   base-directory: dist/game
   discard-paths: yes
 
-cache:
-  paths:
+#cache:
+  #paths:
     #- "node_modules/**/*"
-    - "/root/.npm/**/*"
+    #- "/root/.npm/**/*"
