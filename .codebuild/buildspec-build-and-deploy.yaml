@@ -33,4 +33,5 @@ artifacts:
 
 cache:
   paths:
-    - "/root/.npm/**/*"
+    - "node_modules/**/*"
+    #- "/root/.npm/**/*"
