@@ -31,3 +31,6 @@ artifacts:
   base-directory: dist/game
   discard-paths: yes
 
+cache:
+  paths:
+    - "/root/.npm/**/*"
