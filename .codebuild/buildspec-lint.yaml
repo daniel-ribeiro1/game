@@ -23,5 +23,6 @@ phases:
       - echo "RODOU O LINT"
 
 cache:
-  - "/node_modules/**/*"
-  - "/root/.npm/**/*"
+  paths:
+    - "/node_modules/**/*"
+    - "/root/.npm/**/*"
