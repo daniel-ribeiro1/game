@@ -10,8 +10,8 @@ phases:
         
   pre_build:
     commands:
-      - npm i 
-      - echo "Instalou as dependências"
+      #- npm i 
+      #- echo "Instalou as dependências"
   
   build:
     commands:
