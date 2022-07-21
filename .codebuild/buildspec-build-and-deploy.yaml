@@ -26,7 +26,7 @@ artifacts:
   files:
     - "**/*"
   base-directory: dist/game
-  discard-paths: yes
+#   discard-paths: yes
 
 cache:
   paths:
